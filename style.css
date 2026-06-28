@@ -150,6 +150,19 @@ a {
   background: var(--surface);
 }
 
+.image-wrapper {
+  margin-top: 1.5rem;
+}
+
+.featured-image {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
