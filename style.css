@@ -1,13 +1,13 @@
 :root {
-  --bg: #f5f7fb;
-  --surface: #ffffff;
-  --text: #1f2937;
-  --muted: #6b7280;
-  --primary: #4f46e5;
-  --primary-dark: #3730a3;
-  --border: #e5e7eb;
-  --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-  --radius: 12px;
+  --bg: #020400;
+  --surface: #04100a;
+  --text: #8cff6c;
+  --muted: #4e9f4e;
+  --primary: #69ff58;
+  --primary-dark: #3f9f2d;
+  --border: #0a2c0a;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  --radius: 10px;
 }
 
 * {
@@ -20,7 +20,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Fira Code", "Source Code Pro", Consolas, Monaco, monospace;
   line-height: 1.6;
   color: var(--text);
   background: var(--bg);
@@ -40,7 +40,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(0, 4, 0, 0.95);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
@@ -55,7 +55,8 @@ a {
 .brand {
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--primary-dark);
+  color: var(--primary);
+  text-shadow: 0 0 8px rgba(105, 255, 88, 0.4);
 }
 
 .site-nav {
@@ -82,7 +83,8 @@ a {
 
 .hero {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  background: radial-gradient(circle at top, rgba(109, 255, 114, 0.08), transparent 35%),
+    linear-gradient(180deg, #030700 0%, #06110b 100%);
 }
 
 .hero-content {
@@ -93,7 +95,7 @@ a {
   margin: 0 0 0.5rem;
   font-size: 0.9rem;
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--primary);
 }
@@ -120,26 +122,28 @@ a {
   padding: 0.8rem 1.2rem;
   border-radius: 999px;
   font-weight: 600;
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid rgba(105, 255, 88, 0.2);
 }
 
 .btn:hover {
   transform: translateY(-2px);
+  box-shadow: 0 0 16px rgba(105, 255, 88, 0.25);
 }
 
 .btn-primary {
-  background: var(--primary);
-  color: white;
+  background: rgba(105, 255, 88, 0.15);
+  color: var(--primary);
 }
 
 .btn-primary:hover {
-  background: var(--primary-dark);
+  background: rgba(105, 255, 88, 0.3);
 }
 
 .btn-secondary {
-  background: var(--surface);
+  background: rgba(4, 16, 8, 0.9);
   color: var(--text);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(74, 148, 74, 0.3);
 }
 
 .section {
@@ -147,7 +151,7 @@ a {
 }
 
 .section-alt {
-  background: var(--surface);
+  background: rgba(4, 16, 8, 0.95);
 }
 
 .card-grid {
@@ -159,15 +163,15 @@ a {
 
 .card {
   padding: 1.5rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: rgba(0, 8, 0, 0.95);
+  border: 1px solid rgba(74, 148, 74, 0.2);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 }
 
 .site-footer {
   padding: 1.5rem 0;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid rgba(74, 148, 74, 0.2);
   color: var(--muted);
   text-align: center;
 }
