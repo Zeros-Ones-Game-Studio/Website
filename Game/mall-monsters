@@ -13,9 +13,9 @@
 				<a class="brand" href="../index.html#home">Zeros and Ones Game Studio</a>
 				<button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 				<nav class="site-nav" aria-label="Primary navigation">
-					<a href="../index.html#home">Home</a>
-					<a href="../about.html">About</a>
-					<a href="../games.html">Games</a>
+					<a href="../index.html">Home</a>
+					<a href="../about">About</a>
+					<a href="../games">Games</a>
 					<a href="../index.html#merch">Merch</a>
 					<a href="../index.html#contact">Contact</a>
 				</nav>
@@ -55,7 +55,7 @@
 						<h2>Credits</h2>
 						<p>Concept and prototype by Zeros and Ones Game Studio.</p>
 
-						<p><a class="btn btn-secondary" href="../games.html">Back to Games</a></p>
+						<p><a class="btn btn-secondary" href="../games">Back to Games</a></p>
 					</div>
 				</section>
 			</div>
@@ -64,7 +64,7 @@
 
 		<footer class="site-footer">
 			<div class="container">
-				<p>© <span id="year"></span> Zeros and Ones Game Studio. All rights reserved.</p>
+				<p>©<span id="year"></span> Zeros and Ones Game Studio. All rights reserved.</p>
 			</div>
 		</footer>
 
