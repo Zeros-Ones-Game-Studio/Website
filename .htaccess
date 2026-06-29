@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Optional: remove .html from URLs if the host supports Apache rewrite rules
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+# Optional: redirect old .html URLs to cleaner URLs
+RewriteCond %{THE_REQUEST} \s/+(.+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
