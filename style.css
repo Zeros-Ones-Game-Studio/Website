@@ -160,6 +160,19 @@ a {
   background: rgba(4, 16, 8, 0.95);
 }
 
+.page-content {
+  padding: 2.5rem 0 4rem;
+}
+
+.page-content h2 {
+  margin: 0 0 1rem;
+}
+
+.page-content p {
+  margin: 0 0 1rem;
+  max-width: 70ch;
+}
+
 .image-wrapper {
   margin-top: 1.5rem;
 }
