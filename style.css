@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 
-  {
+html {
   scroll-behavior: smooth;
 }
 
@@ -199,6 +199,29 @@ a {
   border: 1px solid rgba(74, 148, 74, 0.2);
   border-radius: var(--radius);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.merch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.merch-item {
+  padding: 1rem;
+  background: rgba(0, 8, 0, 0.95);
+  border: 1px solid rgba(74, 148, 74, 0.2);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.merch-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: calc(var(--radius) - 2px);
+  margin-bottom: 0.75rem;
 }
 
 .site-footer {
